@@ -1,0 +1,101 @@
+/* Container da previsão do tempo */
+.weather-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    padding: 30px; /* Aumenta o padding para mais espaço */
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
+    text-align: center; /* Garante que os textos dentro do container sejam centralizados */
+}
+
+/* Título da seção */
+h2 {
+    font-size: 2.2rem; /* Tamanho do título maior */
+    color: #333; /* Cor escura para o título */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container das informações climáticas */
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre a imagem e as informações */
+}
+
+/* Imagem do ícone do clima */
+.weather-icon {
+    width: 80px; /* Tamanho ajustado para o ícone */
+}
+
+/* Temperatura */
+.temperature {
+    font-weight: bold;
+    font-size: 3rem; /* Aumenta o tamanho da temperatura */
+    color: #000000; /* Cor de destaque para a temperatura */
+    text-align: center; /* Garante que a temperatura será centralizada */
+}
+
+/* Descrição do clima */
+.description {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Detalhes adicionais como umidade, vento, etc */
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center; /* Centraliza os textos dentro do container de detalhes */
+}
+
+/* Detalhes individuais, como umidade e vento */
+/* Detalhes individuais, como umidade e vento */
+.details p {
+    font-size: 1.1rem;
+    padding: 15px; /* Aumenta o padding para dar mais espaço ao texto */
+    border-radius: 12px; /* Borda arredondada para um visual mais suave */
+    background-color: #f0f0f0; /* Fundo suave para os detalhes */
+    width: 120px; /* Limita o tamanho da caixa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+/* Novo estilo para a sensação térmica para deixar as palavras lado a lado */
+.details p.sensacao-termica {
+    display: flex; /* Flex para colocar as palavras na mesma linha */
+    justify-content: center; /* Centraliza as palavras horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* Efeito ao passar o mouse nos detalhes */
+.details p:hover {
+    transform: translateY(-5px); /* Leve elevação quando o mouse passar */
+    background-color: #e0e0e0; /* Muda a cor de fundo quando o mouse passar */
+}
+
+
+/* Detalhes em dispositivos pequenos */
+@media (max-width: 600px) {
+    .weather-info {
+        flex-direction: column; /* Coloca a imagem e os detalhes em coluna em telas pequenas */
+        align-items: center;
+    }
+
+    .details {
+        flex-direction: column; /* Organiza os detalhes em coluna */
+    }
+
+    .details p {
+        width: 100%; /* Detalhes ocupam toda a largura */
+        margin-bottom: 10px; /* Adiciona um pequeno espaço entre os detalhes */
+    }
+}

@@ -1,0 +1,22 @@
+/* Container principal do mapa */
+.weather-map {
+  display: flex;
+  justify-content: center; /* Centraliza a imagem na tela */
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f8ff; /* Cor de fundo suave */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor */
+  max-width: 800px; /* Limita a largura máxima */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  height: 500px; /* Define uma altura fixa para o container */
+}
+
+/* Estilo da imagem do mapa */
+.map-image {
+  width: 90%; /* Ajusta a largura da imagem para 90% do container */
+  max-width: 600px; /* Limita a largura máxima da imagem */
+  border-radius: 10px; /* Bordas arredondadas para a imagem */
+  border: 10px solid #4b4b4b; /* Borda sólida ao redor da imagem */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra suave em torno da borda */
+}
